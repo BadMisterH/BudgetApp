@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionnaire de Budget</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="./app.js" defer></script>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+    <h1>Suivi Budgétaire</h1>
+
+    <div class="container-solde">
+        <div class="SoldeTotal">
+            <h2>Solde Total</h2>
+            <p>+0.00 €</p>
+        </div>
+        <div class="Revenu">
+            <h2>Revenus</h2>
+            <p>+0.00 €</p>
+        </div>
+        <div class="Depense">
+            <h2>Dépenses</h2>
+            <p>+0.00 €</p>
+        </div>
+    </div>
+
+    <form>
+        <div>
+            <label for="type">Type:</label>
+            <input type="button" id="depense" name="depenseBtn" value="depense">
+            <input type="button" id="revenu" name="revenuBtn" value="revenu">
+        </div>
+
+        <div>
+            <label for="amount">Montant:</label>
+            <input type="number" id="amount" name="montant" min="0" step="0.01" required>
+        </div>
+
+        <div>
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" required>
+        </div>
+
+
+        <div class="DataFormSelect">
+            <select name="choix" id="ChoixDepenseOrRevenu" required>
+                <option value="">Veuillez sélectionner une option</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date">
+        </div>
+
+        <div>
+            <button type="submit">Enregistrer</button>
+        </div>
+    </form>
+
+    <div class="resultApp">
+        <h2>Historique des transactions</h2>
+        <ul class="list" id="listOpt"></ul>
+        <canvas id="myPieChart"></canvas>
+    </div>
+
+</body>
+
+</html>

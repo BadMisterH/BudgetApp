@@ -1,0 +1,30 @@
+{
+  "name": "budgetapp",
+  "version": "1.0.0",
+  "description": "Une petite application web pour gérer tes dépenses facilement. Ajoute des transactions, vois où va ton argent, et affiche des graphiques simples pour mieux comprendre tes habitudes.",
+  "main": "app.js",
+  "scripts": {
+    "tailwind": "tailwindcss -i ./style.css -o ./dist/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BadMisterH/BudgetApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BadMisterH/BudgetApp/issues"
+  },
+  "homepage": "https://github.com/BadMisterH/BudgetApp#readme",
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "tailwindcss": "^4.1.7"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.7",
+    "chart.js": "^4.4.9",
+    "firebase": "^11.9.1",
+    "postcss": "^8.5.3"
+  }
+}

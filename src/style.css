@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+
+.vanished {
+  display: none;
+}
+
+#myPieChart{
+  width: auto !important;
+  height: 400px !important;
+}
+
+.container-solde{
+  width : 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.DataFormSelect{
+  display: none;
+}
+
